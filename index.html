@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patent Landscape · Robotics · Healthtech · SpaceTech · Manufacturing</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/dist/tabler-icons.min.css">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+body, p, h1, h2, h3, pre, table { margin: 0; }
+
+:root {
+  --bg:        #08080E;
+  --s1:        #10101A;
+  --s2:        #0B0B13;
+  --border:    rgba(255,255,255,0.07);
+  --t1:        #E2E1EE;
+  --t2:        #7C7B92;
+  --t3:        #3E3D50;
+  --purple:    #8F87E8;
+  --green:     #22B885;
+  --blue:      #4B96E8;
+  --amber:     #C98A27;
+  --purple-bg: rgba(143,135,232,0.11);
+  --green-bg:  rgba(34,184,133,0.11);
+  --blue-bg:   rgba(75,150,232,0.11);
+  --amber-bg:  rgba(201,138,39,0.11);
+  --r-sm: 4px;
+  --r-md: 7px;
+  --r-lg: 11px;
+}
+
+html { color-scheme: dark; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--t1);
+  min-height: 100vh;
+  padding: 2.25rem 1.5rem 3.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+.page { max-width: 980px; margin: 0 auto; }
+
+.ph {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.ph-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--t1);
+  letter-spacing: -0.015em;
+  margin-bottom: 3px;
+}
+.ph-sub { font-size: 11px; color: var(--t3); }
+.ph-note { font-size: 11px; color: var(--t3); text-align: right; }
+
+.card {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 0.875rem 1rem;
+}
+.card-p {
+  background: var(--s1);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 1rem 1.25rem;
+}
+
+.g4 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.g2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.mb { margin-bottom: 10px; }
+
+.pill {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 20px;
+  line-height: 1.7;
+}
+.p-purple { background: var(--purple-bg); color: var(--purple); }
+.p-green  { background: var(--green-bg);  color: var(--green);  }
+.p-blue   { background: var(--blue-bg);   color: var(--blue);   }
+.p-amber  { background: var(--amber-bg);  color: var(--amber);  }
+
+.stat-num {
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin: 0 0 2px;
+  color: var(--t1);
+}
+
+.legend { display: flex; gap: 12px; font-size: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+.legend-item { display: flex; align-items: center; gap: 5px; color: var(--t2); }
+.swatch { width: 8px; height: 8px; border-radius: 2px; display: inline-block; flex-shrink: 0; }
+
+.infl-head {
+  display: flex; align-items: center; gap: 5px;
+  margin-bottom: 8px; padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.infl-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+.fn { font-size: 10px; color: var(--t3); line-height: 1.65; }
+
+@media (max-width: 820px) {
+  .g4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .g2, .g4 { grid-template-columns: 1fr; }
+  .ph { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .ph-note { text-align: left; }
+  body { padding: 1.5rem 1rem 2.5rem; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="ph">
+    <div>
+      <h1 class="ph-title">Patent Landscape Dashboard</h1>
+      <p class="ph-sub">Robotics · Healthtech · SpaceTech · Advanced Manufacturing · 2023–2025</p>
+    </div>
+    <p class="ph-note">WIPO · EPO · USPTO · PatSnap · GreyB<br>Scopes vary by sector — see footnotes</p>
+  </header>
+
+  <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap">Global patent landscape dashboard for robotics, healthtech, spacetech, and advanced manufacturing. Compares volume, velocity, and influence signals from 2023 to 2025.</h2>
+
+  <!-- Stat cards -->
+  <div class="g4 mb">
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:7px">
+        <i class="ti ti-robot" style="font-size:15px;color:var(--purple)" aria-hidden="true"></i>
+        <span style="font-size:12px;font-weight:500;color:var(--t1)">Robotics</span>
+      </div>
+      <p class="stat-num">4,734</p>
+      <p style="font-size:10px;color:var(--t3);margin:0 0 9px">surgical grants (2024)</p>
+      <div style="display:flex;flex-wrap:wrap;gap:4px">
+        <span class="pill p-purple">+17% surgical</span>
+        <span class="pill p-purple">+44% perception</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:7px">
+        <i class="ti ti-heart-rate-monitor" style="font-size:15px;color:var(--green)" aria-hidden="true"></i>
+        <span style="font-size:12px;font-weight:500;color:var(--t1)">Healthtech</span>
+      </div>
+      <p class="stat-num">412K+</p>
+      <p style="font-size:10px;color:var(--t3);margin:0 0 9px">global healthcare (2025)</p>
+      <div style="display:flex;flex-wrap:wrap;gap:4px">
+        <span class="pill p-green">+4.9% global</span>
+        <span class="pill p-green">#1 EPO sector</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:7px">
+        <i class="ti ti-rocket" style="font-size:15px;color:var(--blue)" aria-hidden="true"></i>
+        <span style="font-size:12px;font-weight:500;color:var(--t1)">SpaceTech</span>
+      </div>
+      <p class="stat-num">58,900</p>
+      <p style="font-size:10px;color:var(--t3);margin:0 0 9px">global filings (2025)</p>
+      <div style="display:flex;flex-wrap:wrap;gap:4px">
+        <span class="pill p-blue">+5.4% CAGR</span>
+        <span class="pill p-blue">+144% since 2003</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:7px">
+        <i class="ti ti-settings-2" style="font-size:15px;color:var(--amber)" aria-hidden="true"></i>
+        <span style="font-size:12px;font-weight:500;color:var(--t1)">Manufacturing</span>
+      </div>
+      <p class="stat-num">178,650</p>
+      <p style="font-size:10px;color:var(--t3);margin:0 0 9px">additive mfg patents filed</p>
+      <div style="display:flex;flex-wrap:wrap;gap:4px">
+        <span class="pill p-amber">+11.1% YoY</span>
+        <span class="pill p-amber">38K+ applicants</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Charts row -->
+  <div class="g2 mb">
+    <div class="card-p">
+      <p style="font-size:12px;font-weight:500;color:var(--t1);margin:0 0 2px">Growth velocity</p>
+      <p style="font-size:10px;color:var(--t3);margin:0 0 12px">YoY patent filing growth by subsector (%)</p>
+      <div class="legend">
+        <span class="legend-item"><span class="swatch" style="background:var(--purple)"></span>Robotics</span>
+        <span class="legend-item"><span class="swatch" style="background:var(--green)"></span>Healthtech</span>
+        <span class="legend-item"><span class="swatch" style="background:var(--blue)"></span>SpaceTech</span>
+        <span class="legend-item"><span class="swatch" style="background:var(--amber)"></span>Manufacturing</span>
+      </div>
+      <div style="position:relative;width:100%;height:220px">
+        <canvas id="velocityChart" role="img" aria-label="Horizontal bar chart: Robot perception +44%, Surgical robots +17.4%, Additive mfg +11.1%, SpaceTech +5.4%, Medtech EPO +1.2%"></canvas>
+      </div>
+    </div>
+
+    <div class="card-p">
+      <p style="font-size:12px;font-weight:500;color:var(--t1);margin:0 0 2px">Volume trend · 2023–2025</p>
+      <p style="font-size:10px;color:var(--t3);margin:0 0 12px">SpaceTech global filings (left) vs surgical robot grants (right)</p>
+      <div class="legend">
+        <span class="legend-item"><span class="swatch" style="background:var(--blue)"></span>SpaceTech (000s, left)</span>
+        <span class="legend-item"><span class="swatch" style="background:var(--purple)"></span>Surgical robots (right)</span>
+      </div>
+      <div style="position:relative;width:100%;height:220px">
+        <canvas id="volumeChart" role="img" aria-label="SpaceTech 52.1K (2023), 56.3K (2024), 58.9K (2025). Surgical robots 4,031 (2023), 4,734 (2024)."></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- Influence signals -->
+  <div class="card-p mb">
+    <p style="font-size:12px;font-weight:500;color:var(--t1);margin:0 0 14px">Influence signals</p>
+    <div class="g4">
+
+      <div>
+        <div class="infl-head">
+          <span class="infl-dot" style="background:var(--purple)"></span>
+          <span style="font-size:11px;font-weight:500;color:var(--t1)">Robotics</span>
+        </div>
+        <p style="font-size:10px;color:var(--t2);margin:0 0 2px">Top assignees</p>
+        <p style="font-size:10px;color:var(--t1);margin:0 0 9px">Intuitive Surgical, Boston Dynamics, NVIDIA</p>
+        <p style="font-size:10px;color:var(--t2);margin:0 0 2px">Quality signal</p>
+        <p style="font-size:10px;color:var(--t1);margin:0 0 9px;line-height:1.6">AI-robotics fusion driving forward citations; haptics + autonomous control hotspots</p>
+        <span class="pill p-purple">China volume · US quality</span>
+      </div>
+
+      <div>
+        <div class="infl-head">
+          <span class="infl-dot" style="background:var(--green)"></span>
+          <span style="font-size:11px;font-weight:500;color:var(--t1)">Healthtech</span>
+        </div>
+        <p style="font-size:10px;color:var(--t2);margin:0 0 2px">Top assignees</p>
+        <p style="font-size:10px;color:var(--t1);margin:0 0 9px">Philips (594 EPO filings), GE HealthCare, Boston Scientific</p>
+        <p style="font-size:10px;color:var(--t2);margin:0 0 2px">Quality signal</p>
+        <p style="font-size:10px;color:var(--t1);margin:0 0 9px;line-height:1.6">NPE litigation +21.6% Q4 2024 — high commercial patent value; AI diagnostics hotspot</p>
+        <span class="pill p-green">#1 EPO sector · 7.9% share</span>
+      </div>
+
+      <div>
+        <div class="infl-head">
+          <span class="infl-dot" style="background:var(--blue)"></span>
+          <span style="font-size:11px;font-weight:500;color:var(--t1)">SpaceTech</span>
+        </div>
+        <p style="font-size:10px;color:var(--t2);margin:0 0 2px">Top assignees</p>
+        <p style="font-size:10px;color:var(--t1);margin:0 0 9px">NASA, DoD, Mitsubishi, Caltech, Shenyang Aerospace Univ.</p>
+        <p style="font-size:10px;color:var(--t2);margin:0 0 2px">Quality signal</p>
+        <p style="font-size:10px;color:var(--t1);margin:0 0 9px;line-height:1.6">Reusable systems +15% CAGR since 2000; US space patents outpaced all other sectors</p>
+        <span class="pill p-blue">China 42% · US 30% share</span>
+      </div>
+
+      <div>
+        <div class="infl-head">
+          <span class="infl-dot" style="background:var(--amber)"></span>
+          <span style="font-size:11px;font-weight:500;color:var(--t1)">Manufacturing</span>
+        </div>
+        <p style="font-size:10px;color:var(--t2);margin:0 0 2px">Top assignees</p>
+        <p style="font-size:10px;color:var(--t1);margin:0 0 9px">US leads (50,970+), China close behind (46,760+); 38,260 unique filers</p>
+        <p style="font-size:10px;color:var(--t2);margin:0 0 2px">Quality signal</p>
+        <p style="font-size:10px;color:var(--t1);margin:0 0 9px;line-height:1.6">Additive Mfg journal h-index 168, impact factor 11.83 — highest citation density in group</p>
+        <span class="pill p-amber">Broadest applicant base</span>
+      </div>
+
+    </div>
+  </div>
+
+  <p class="fn">* Volume scopes differ: Healthtech = all global healthcare filings incl. pharma; Manufacturing = additive manufacturing subset; SpaceTech = cross-office aggregated; Robotics = surgical segment grants only. Velocity rates reflect most recent available annual comparison for each subsector.</p>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+const gc = 'rgba(255,255,255,0.05)';
+const tc = '#7C7B92';
+const tt = { backgroundColor: '#1C1C28', borderColor: 'rgba(255,255,255,0.1)', borderWidth: 1, padding: 8 };
+
+Chart.defaults.color = tc;
+Chart.defaults.borderColor = gc;
+Chart.defaults.font.family = 'system-ui, -apple-system, "Segoe UI", sans-serif';
+
+new Chart(document.getElementById('velocityChart'), {
+  type: 'bar',
+  data: {
+    labels: ['Robot perception', 'Surgical robots', 'Additive mfg', 'SpaceTech', 'Medtech (EPO)'],
+    datasets: [{
+      data: [44, 17.4, 11.1, 5.4, 1.2],
+      backgroundColor: ['#8F87E8', '#ACA6F0', '#C98A27', '#4B96E8', '#22B885'],
+      borderRadius: 4,
+      borderSkipped: false,
+    }]
+  },
+  options: {
+    indexAxis: 'y',
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { ...tt, callbacks: { label: ctx => ` +${ctx.parsed.x.toFixed(1)}%` } }
+    },
+    scales: {
+      x: { grid: { color: gc }, ticks: { color: tc, font: { size: 10 }, callback: v => `+${v}%` }, border: { color: 'transparent' } },
+      y: { grid: { display: false }, ticks: { color: tc, font: { size: 10 } }, border: { color: 'transparent' } }
+    }
+  }
+});
+
+new Chart(document.getElementById('volumeChart'), {
+  type: 'bar',
+  data: {
+    labels: ['2023', '2024', '2025'],
+    datasets: [
+      { label: 'SpaceTech (000s)', data: [52.1, 56.3, 58.9], backgroundColor: 'rgba(75,150,232,0.22)', borderColor: '#4B96E8', borderWidth: 1, borderRadius: 4, yAxisID: 'y' },
+      { label: 'Surgical robots', data: [4031, 4734, null], backgroundColor: '#8F87E8', borderRadius: 4, yAxisID: 'y2' }
+    ]
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    plugins: {
+      legend: { display: false },
+      tooltip: { ...tt, callbacks: { label: ctx => {
+        if (ctx.datasetIndex === 0) return ` ${ctx.parsed.y.toFixed(1)}K filings (SpaceTech)`;
+        if (ctx.parsed.y) return ` ${ctx.parsed.y.toLocaleString()} grants (Surgical)`;
+        return '';
+      }}}
+    },
+    scales: {
+      y:  { type: 'linear', position: 'left',  grid: { color: gc }, ticks: { color: '#4B96E8', font: { size: 10 }, callback: v => `${v}K` }, border: { color: 'transparent' }, min: 45 },
+      y2: { type: 'linear', position: 'right', grid: { display: false }, ticks: { color: '#8F87E8', font: { size: 10 }, callback: v => v.toLocaleString() }, border: { color: 'transparent' }, min: 3000 },
+      x:  { grid: { display: false }, ticks: { color: tc, font: { size: 10 } }, border: { color: 'transparent' } }
+    }
+  }
+});
+</script>
+</body>
+</html>
